@@ -21,6 +21,7 @@ jobs:
   #       npx nx affected --target=build --parallel=3
 
   release:
+    runs-on: ubuntu-latest
     name: Semantic Release
     steps:
       - uses: actions/checkout@v2
