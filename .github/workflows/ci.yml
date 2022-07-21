@@ -33,7 +33,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx run my-app:semantic-release
+      - run: npx nx run home:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
