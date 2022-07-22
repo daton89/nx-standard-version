@@ -6,7 +6,7 @@ export interface SharedFtCarouselProps {}
 export function SharedFtCarousel(props: SharedFtCarouselProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to SharedFtCarousel!</h1>
+      <h1>Welcome to SharedFtCarousel!!!</h1>
     </div>
   );
 }
