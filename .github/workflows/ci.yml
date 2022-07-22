@@ -36,6 +36,7 @@ jobs:
       - run: npx nx run home:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HUSKY: 0
 
   # agents:
   #   name: Nx Cloud - Agents
