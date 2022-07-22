@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/daton89/nx-standard-version/compare/home-v1.0.0...home-v1.1.0) (2022-07-22)
+
+
+### Features
+
+* add esclamation to carousel ([29f9723](https://github.com/daton89/nx-standard-version/commit/29f972309f76444db7042e861d846cd02791be9c))
+
 # 1.0.0 (2022-07-22)
 
 
