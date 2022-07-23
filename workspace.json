@@ -3,6 +3,6 @@
   "version": 2,
   "projects": {
     "home": "apps/home",
-    "shared-ft-carousel": "libs/shared/ft-carousel"
+    "shared-carousel-ui-carousel": "libs/shared/carousel/ui-carousel"
   }
 }

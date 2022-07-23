@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'shared-ft-carousel',
-  preset: '../../../jest.preset.js',
+  displayName: 'shared-carousel-ui-carousel',
+  preset: '../../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': [
       '@swc/jest',
@@ -9,5 +9,5 @@ export default {
     ],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/shared/ft-carousel',
+  coverageDirectory: '../../../../coverage/libs/shared/carousel/ui-carousel',
 };

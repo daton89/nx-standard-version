@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-standard-version/shared/ft-carousel": [
-        "libs/shared/ft-carousel/src/index.ts"
+      "@nx-standard-version/shared-carousel-ui-carousel": [
+        "libs/shared/carousel/ui-carousel/src/index.ts"
       ]
     }
   },

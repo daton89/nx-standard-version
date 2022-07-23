@@ -1,27 +1,23 @@
 {
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/ft-carousel/src",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/carousel/ui-carousel/src",
   "projectType": "library",
   "tags": [],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/shared/ft-carousel/**/*.{ts,tsx,js,jsx}"
+          "libs/shared/carousel/ui-carousel/**/*.{ts,tsx,js,jsx}"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/shared/ft-carousel"
-      ],
+      "outputs": ["coverage/libs/shared/carousel/ui-carousel"],
       "options": {
-        "jestConfig": "libs/shared/ft-carousel/jest.config.ts",
+        "jestConfig": "libs/shared/carousel/ui-carousel/jest.config.ts",
         "passWithNoTests": true
       }
     },

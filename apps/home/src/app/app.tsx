@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
 
-import { Carousel } from '@nx-standard-version/shared/ft-carousel';
+import { Carousel } from '@nx-standard-version/shared-carousel-ui-carousel';
 
 export function App() {
   return (
