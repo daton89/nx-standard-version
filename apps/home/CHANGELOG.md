@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/daton89/nx-standard-version/compare/home-v1.1.0...home-v1.2.0) (2022-07-23)
+
+
+### Features
+
+* add carousel ([300c3c4](https://github.com/daton89/nx-standard-version/commit/300c3c48237b4af78fb11651cfe93da083bf5609))
+
 # [1.1.0](https://github.com/daton89/nx-standard-version/compare/home-v1.0.0...home-v1.1.0) (2022-07-22)
 
 
