@@ -1,10 +1,20 @@
 import { render } from '@testing-library/react';
 
-import SharedFtCarousel from './shared-ft-carousel';
+import { Carousel } from './shared-ft-carousel';
 
-describe('SharedFtCarousel', () => {
+function renderComponent() {
+  return render(
+    <Carousel>
+      <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+      <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+      <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
+    </Carousel>
+  );
+}
+
+describe('Carousel', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<SharedFtCarousel />);
+    const { baseElement } = renderComponent();
     expect(baseElement).toBeTruthy();
   });
 });
