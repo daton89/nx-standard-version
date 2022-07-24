@@ -5,9 +5,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "swc",
@@ -17,13 +15,8 @@
         "main": "apps/app4/src/main.tsx",
         "polyfills": "apps/app4/src/polyfills.ts",
         "tsConfig": "apps/app4/tsconfig.app.json",
-        "assets": [
-          "apps/app4/src/favicon.ico",
-          "apps/app4/src/assets"
-        ],
-        "styles": [
-          "apps/app4/src/styles.css"
-        ],
+        "assets": ["apps/app4/src/favicon.ico", "apps/app4/src/assets"],
+        "styles": ["apps/app4/src/styles.css"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -69,20 +62,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/app4/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["apps/app4/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/app4"
-      ],
+      "outputs": ["coverage/apps/app4"],
       "options": {
         "jestConfig": "apps/app4/jest.config.ts",
         "passWithNoTests": true
