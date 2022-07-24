@@ -1,0 +1,14 @@
+import styles from './app4-lib13.module.css';
+
+/* eslint-disable-next-line */
+export interface App4Lib13Props {}
+
+export function App4Lib13(props: App4Lib13Props) {
+  return (
+    <div className={styles['container']}>
+      <h1>Welcome to App4Lib13!</h1>
+    </div>
+  );
+}
+
+export default App4Lib13;
