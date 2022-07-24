@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "app1": "apps/app1",
+    "app1-lib1": "libs/app1/lib1",
     "home": "apps/home",
     "shared-carousel-ui-carousel": "libs/shared/carousel/ui-carousel"
   }

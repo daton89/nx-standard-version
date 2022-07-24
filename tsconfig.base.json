@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-standard-version/app1/lib1": ["libs/app1/lib1/src/index.ts"],
       "@nx-standard-version/shared-carousel-ui-carousel": [
         "libs/shared/carousel/ui-carousel/src/index.ts"
       ]
