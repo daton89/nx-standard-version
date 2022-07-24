@@ -1,0 +1,102 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/app5/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "swc",
+        "outputPath": "dist/apps/app5",
+        "index": "apps/app5/src/index.html",
+        "baseHref": "/",
+        "main": "apps/app5/src/main.tsx",
+        "polyfills": "apps/app5/src/polyfills.ts",
+        "tsConfig": "apps/app5/tsconfig.app.json",
+        "assets": [
+          "apps/app5/src/favicon.ico",
+          "apps/app5/src/assets"
+        ],
+        "styles": [
+          "apps/app5/src/styles.css"
+        ],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/app5/src/environments/environment.ts",
+              "with": "apps/app5/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "app5:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "app5:build:development"
+        },
+        "production": {
+          "buildTarget": "app5:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/app5/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/app5"
+      ],
+      "options": {
+        "jestConfig": "apps/app5/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "npm": false,
+        "github": true,
+        "changelog": true,
+        "tagFormat": "app5-v${VERSION}"
+      }
+    }
+  },
+  "tags": []
+}
